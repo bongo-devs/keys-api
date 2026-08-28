@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/bun": "^20",
+    "@types/bun": "^1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
