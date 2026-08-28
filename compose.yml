@@ -1,0 +1,16 @@
+# docker compose up -d — reads the .env beside this file for the three required vars (see .env.example).
+services:
+  api:
+    image: ghcr.io/bongo-devs/keys-api:latest
+    # build: . # swap the image line for this to run the code in this checkout instead
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8787:8787"
+    # A named volume, not a bind mount: the container runs as the unprivileged `bun` user, and a
+    # host-owned directory would be read-only to it.
+    volumes:
+      - keys-data:/app/data
+
+volumes:
+  keys-data:

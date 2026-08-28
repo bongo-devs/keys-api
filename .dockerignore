@@ -1,0 +1,13 @@
+# Keep secrets and local state out of the build context — .env would otherwise be baked into a layer,
+# and a copied data/ would ship someone's key pool inside the image.
+.env
+data/
+apps/
+node_modules/
+tests/
+.github/
+.claude
+.git/
+*.md
+Dockerfile
+compose.yml

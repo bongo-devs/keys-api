@@ -1,0 +1,11 @@
+# deps
+node_modules/
+apps/
+.claude
+
+# local
+.env
+.env.local
+data/
+dashboard/.next/
+dashboard/tsconfig.tsbuildinfo

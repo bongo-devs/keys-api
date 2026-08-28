@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["bun"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+  "include": ["src", "tests"]
+}
